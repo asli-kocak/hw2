@@ -1,0 +1,124 @@
+body {
+    align-content: center;
+    padding: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(0, 55, 74);
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-left: 20px;
+    text-align: center; /* Center text horizontally */
+    line-height: 100px; /* Adjust this value to match the container's height */
+}
+
+h2  {
+    color: rgba(201, 239, 255, 0.822);
+    margin-left: 20px;
+}
+
+p  {
+    display: inline-block;
+    color: rgb(210, 222, 217);
+    margin-left: 20px;
+
+    font-size: large;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 2% auto; 
+    padding: 0;
+    overflow: hidden;
+    background-color: #28a285a6;
+    text-align: center; 
+
+}
+
+ul.nav li {
+  display: inline-block; 
+}
+
+ul.nav li a {
+    display: block;
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    padding: 20px 80px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover:not(.active) {
+    background-color: #1b5256;
+}
+
+ul.nav li a.active {
+    background-color: #04AA6D;
+}
+
+
+.top{
+    background-image: url(images/banner.jpg);  background-size:cover;  
+    height: 100px;  width: 100%; padding-top: 0%; 
+    text-align:center; font-size:  30px;  position:relative;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    align-items: flex-start; /* Align items vertically with the top of the paragraph */
+}
+
+
+
+.left_bar img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    float: left;
+}
+.right_bar img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    float: right;    
+
+}
+
+
+.main_bar {
+    float: center;
+    max-width: fit-content;
+
+}
+
+.main_bar img {
+    align-items: center;
+    display: inline-block; /* Make the image an inline-block element */
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    ul.nav {
+        text-align: center; /* Center text for mobile screens */
+    }
+    ul.nav li {
+        display: block;
+        margin-bottom: 5px; 
+    }
+    .left_bar, .right_bar, .main_bar img {
+        display: inline;
+        max-block-size: 5%;
+    }
+    
+}
